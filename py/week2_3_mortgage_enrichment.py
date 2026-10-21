@@ -40,7 +40,7 @@ if sold_missing_rate == 0 and listings_missing_rate == 0:
     print("VALIDATION PASSED: every row has a mortgage rate")
 else:
     print("VALIDATION FAILED: some rows have no mortgage rate, investigate before saving")
-    sold_with_rates.to_csv("Sold_Enriched_MortgageRates.csv", index=False)
+sold_with_rates.to_csv("Sold_Enriched_MortgageRates.csv", index=False)
 listings_with_rates.to_csv("Listings_Enriched_MortgageRates.csv", index=False)
 
 print("\nSaved Sold_Enriched_MortgageRates.csv and Listings_Enriched_MortgageRates.csv")
